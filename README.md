@@ -14,6 +14,7 @@ Currently, I'm working as a **Research Assistant** at Northeastern University, s
 - **Responsive design** for all devices
 - **Updates section** for sharing news and milestones
 - **Experience section** highlighting current and past roles
+- **Blog section** for sharing thoughts and articles on AI, technology, and research
 - **Custom 404 error page** with personalization
 - **Social links** for easy connection
 
