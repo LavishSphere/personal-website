@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .error-content {
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 8em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #6366f1, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .error-title {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin: 20px 0;
+        }
+
+        .error-message {
+            font-size: 1.1em;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .error-actions a {
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .home-btn {
+            background: linear-gradient(135deg, #6366f1, #818cf8);
+            color: white;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .back-btn {
+            border: 2px solid #6366f1;
+            color: #818cf8;
+        }
+
+        .back-btn:hover {
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .floating-emoji {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #334155;
+        }
+
+        .page-name {
+            font-size: 2em;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin-bottom: 4px;
+        }
+
+        .page-position {
+            font-size: 1em;
+            color: #818cf8;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <div class="page-header">
+                <h1 class="page-name">Ashsmith Khayrul</h1>
+                <p class="page-position">Research Assistant • CS & Business Student</p>
+            </div>
+            <div class="floating-emoji">😕</div>
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Page Not Found</h2>
+            <p class="error-message">Hmm, it seems you've discovered a page that even my AI research couldn't predict! This page doesn't exist, time to get back on track!</p>
+            <div class="error-actions">
+                <a href="/" class="home-btn">Back to My Site</a>
+                <a href="javascript:history.back()" class="back-btn">Go Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

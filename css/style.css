@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: #ec4899;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #f472b6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header / Profile Section */
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #6366f1;
+}
+
+.name {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #f1f5f9;
+}
+
+.title {
+    font-size: 1.1em;
+    color: #818cf8;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.bio {
+    font-size: 1em;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 60px;
+}
+
+.section h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #f1f5f9;
+}
+
+/* Updates List */
+.updates-list {
+    list-style: none;
+}
+
+.updates-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+.updates-list li::before {
+    content: "• ";
+    margin-right: 8px;
+    color: #6366f1;
+    font-weight: bold;
+}
+
+/* Experience Items */
+.experience-item {
+    margin-bottom: 40px;
+}
+
+.experience-item h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #f1f5f9;
+}
+
+.meta {
+    font-size: 0.95em;
+    color: #818cf8;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.description {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #334155;
+    display: flex;
+    gap: 60px;
+}
+
+.footer-section h3 {
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #f1f5f9;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #ec4899;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #f472b6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 16px;
+    }
+
+    .name {
+        font-size: 1.8em;
+    }
+
+    .section h2 {
+        font-size: 1.4em;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
