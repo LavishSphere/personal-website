@@ -161,6 +161,122 @@ body {
     margin-bottom: 20px;
 }
 
+/* Blog Post Page Styles */
+
+.blog-post-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 20px;
+}
+
+.blog-post-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #334155;
+    font-size: 0.95em;
+    color: #cbd5e1;
+}
+
+.blog-post-meta span {
+    display: flex;
+    gap: 8px;
+}
+
+.blog-post-meta strong {
+    color: #818cf8;
+}
+
+.blog-post-content {
+    color: #e2e8f0;
+    line-height: 1.8;
+}
+
+.blog-post-content h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.blog-post-content h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.blog-post-content p {
+    margin-bottom: 20px;
+}
+
+.blog-post-content a {
+    color: #818cf8;
+    text-decoration: none;
+    border-bottom: 1px solid #818cf8;
+    transition: color 0.2s;
+}
+
+.blog-post-content a:hover {
+    color: #6366f1;
+}
+
+.blog-post-tags {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+}
+
+.blog-post-tags-label {
+    font-weight: 600;
+    color: #818cf8;
+    margin-bottom: 10px;
+}
+
+.blog-post-tags-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.blog-post-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid #818cf8;
+    border-radius: 4px;
+    color: #818cf8;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: all 0.2s;
+}
+
+.blog-post-tag:hover {
+    background: rgba(99, 102, 241, 0.2);
+}
+
+.blog-nav-links {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.blog-nav-links a {
+    color: #818cf8;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.2s;
+}
+
+.blog-nav-links a:hover {
+    color: #6366f1;
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 20px 16px;
@@ -170,8 +286,22 @@ body {
         font-size: 2em;
     }
 
+    .blog-post-title {
+        font-size: 2em;
+    }
+
+    .blog-post-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .footer {
         flex-direction: column;
         gap: 30px;
+    }
+
+    .blog-nav-links a {
+        display: block;
+        margin: 10px 0;
     }
 }
