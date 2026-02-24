@@ -1,6 +1,6 @@
 # Personal Website
 
-A modern, minimalist portfolio website showcasing my work as a Computer Science and Business student at Northeastern University. This site serves as a hub for my professional updates, research work, and projects. The entire site is **vibe coded** - built with passion and creativity to showcase who I am and what I'm working on.
+A modern, minimalist portfolio website showcasing my work as a Computer Science and Business student at Northeastern University. This site serves as a hub for my professional updates, research work, and projects.
 
 ## About Me
 
