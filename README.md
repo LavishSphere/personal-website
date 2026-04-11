@@ -44,4 +44,4 @@ See the LICENSE file for more details.
 
 ---
 
-**Last Updated:** February 2026 | Actively maintained and updated regularly
+**Last Updated:** April 2026 | Actively maintained and updated regularly
