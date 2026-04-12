@@ -183,6 +183,12 @@ body {
     color: #cbd5e1;
 }
 
+.copyright {
+    margin-top: 16px;
+    font-size: 0.8em;
+    color: #475569;
+}
+
 .empty-state {
     text-align: center;
     padding: 60px 20px;
