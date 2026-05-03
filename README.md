@@ -1,12 +1,12 @@
 # Personal Website
 
-A modern, minimalist portfolio website showcasing my work as a Computer Science and Business student at Northeastern University. This site serves as a hub for my professional updates, research work, and projects.
+A modern, minimalist portfolio website showcasing my work as a Computer Science and Business Administration student at Northeastern University. This site serves as a hub for my professional updates, research work, and projects.
 
 ## About Me
 
-I'm a first-year Computer Science and Business student with a concentration in Finance at Northeastern University. I'm passionate about exploring technological advancements and working to integrate AI responsibly into projects.
+I'm a second-year Computer Science and Business Administration student with a concentration in Fintech at Northeastern University. I'm interested in learning about technological innovations and working to integrate AI responsibly into projects.
 
-Currently, I'm working as a **Research Assistant** at Northeastern University, supporting a City of Oakland–Northeastern University partnership focused on responsible AI adoption in local government.
+I'll be serving as a **Teaching Assistant** for CS 3200 Databases at Northeastern University this summer, taught by Professor John Rachlin. Previously, I worked as a **Research Assistant** supporting a City of Oakland–Northeastern University partnership focused on responsible AI adoption in local government.
 
 ## Website Features
 
@@ -24,12 +24,7 @@ Check out some of my recent work:
 
 - **[Uniplex](https://uniplex.xyz)** - A reliable hosting solution providing VPS and web hosting services with excellent uptime and performance.
 
-- **[AshBot](https://ashbot.xyz)** - A Discord bot that's being phased out and will be open sourced. Check back soon for the source code!
-
-## Coming Soon
-
-📸 **Professional Photo** - A high-quality professional headshot will be added once I capture the perfect shot
-📄 **Resume** - A comprehensive resume is currently in development and will be available soon
+- **[AshBot](https://ashbot.xyz)** - A Discord bot that has been officially sunset and is being open-sourced. Check back soon for the source code!
 
 ## Technologies Used
 
@@ -44,4 +39,4 @@ See the LICENSE file for more details.
 
 ---
 
-**Last Updated:** April 2026 | Actively maintained and updated regularly
+**Last Updated:** May 2026 | Actively maintained and updated regularly
