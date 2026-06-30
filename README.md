@@ -1,42 +1,44 @@
 # Personal Website
 
-A modern, minimalist portfolio website showcasing my work as a Computer Science and Business Administration student at Northeastern University. This site serves as a hub for my professional updates, research work, and projects.
+The source for [khayrul.com](https://khayrul.com), my personal website and blog. It highlights my experience as a Computer Science and Business Administration student at Northeastern University, where I concentrate in Fintech, along with my work in responsible AI, teaching, and systems engineering.
 
-## About Me
+## What's on the Site
 
-I'm a second-year Computer Science and Business Administration student with a concentration in Fintech at Northeastern University. I'm interested in learning about technological innovations and working to integrate AI responsibly into projects.
+- A profile page with recent updates and professional experience
+- A blog about technology, education, and running a hosting company
+- Links to my resume, GitHub, LinkedIn, and email
+- Responsive dark-theme styling for desktop and mobile
+- Search and social metadata, structured data, a sitemap, and `robots.txt`
+- A custom 404 page
 
-I'll be serving as a **Teaching Assistant** for CS 3200 Databases at Northeastern University this summer, taught by Professor John Rachlin. Previously, I worked as a **Research Assistant** supporting a City of Oakland–Northeastern University partnership focused on responsible AI adoption in local government.
+## Built With
 
-## Website Features
+The site is built with plain HTML, CSS, and JavaScript. It has no framework, package manager, or build step. Font Awesome is loaded from a CDN for social icons.
 
-- **Dark theme** with modern indigo and pink accents
-- **Responsive design** for all devices
-- **Updates section** for sharing news and milestones
-- **Experience section** highlighting current and past roles
-- **Blog section** for sharing thoughts and articles on AI, technology, and research
-- **Custom 404 error page** with personalization
-- **Social links** for easy connection
+## Project Structure
 
-## Featured Projects
+```text
+.
+├── index.html          # Home page
+├── blog/               # Blog index and posts
+├── css/                # Site and blog styles
+├── js/                 # Client-side interactions
+├── cdn/                # Profile image, resume, and fallback assets
+├── 404.html            # Custom not-found page
+├── sitemap.xml
+└── robots.txt
+```
 
-Check out some of my recent work:
+## Running Locally
 
-- **[Uniplex](https://uniplex.xyz)** - A reliable hosting solution providing VPS and web hosting services with excellent uptime and performance.
+Because the site is static, you can serve it with any local HTTP server. For example:
 
-- **[AshBot](https://ashbot.xyz)** - A Discord bot that has been officially sunset and is being open-sourced. Check back soon for the source code!
+```bash
+python3 -m http.server 8000
+```
 
-## Technologies Used
-
-- **HTML5** - Semantic markup structure
-- **CSS3** - Modern responsive styling with dark theme
-- **JavaScript** - Smooth interactions and navigation
-- **Git** - Version control
+Then open [http://localhost:8000](http://localhost:8000).
 
 ## License
 
-See the LICENSE file for more details.
-
----
-
-**Last Updated:** May 2026 | Actively maintained and updated regularly
+This project is available under the [MIT License](LICENSE).
