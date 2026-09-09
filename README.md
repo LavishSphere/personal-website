@@ -1,13 +1,13 @@
 # Personal Website
 
-The source for [khayrul.com](https://khayrul.com), my personal website and blog. It highlights my experience as a Computer Science and Business Administration student at Northeastern University, where I concentrate in Fintech, along with my work in responsible AI, teaching, and systems engineering.
+The source for [khayrul.com](https://khayrul.com), my personal website and blog. It highlights my experience as a Computer Science and Business Administration student at Northeastern University, where I concentrate in Entrepreneurial Startups, along with my work in responsible AI, teaching, and systems engineering.
 
 ## What's on the Site
 
-- A profile page with recent updates and professional experience
+- A homepage with an experience timeline, recent updates, and featured projects
 - A blog about technology, education, and running a hosting company
 - Links to my resume, GitHub, LinkedIn, and email
-- Responsive dark-theme styling for desktop and mobile
+- Responsive light/dark theme styling (defaults to system preference, remembers manual overrides) for desktop and mobile
 - Search and social metadata, structured data, a sitemap, and `robots.txt`
 - A custom 404 page
 

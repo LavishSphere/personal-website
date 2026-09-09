@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="/js/theme-init.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/style.css">
     <style>
         .error-container {
@@ -22,7 +25,7 @@
         .error-code {
             font-size: 8em;
             font-weight: 900;
-            background: linear-gradient(135deg, #6366f1, #ec4899);
+            background: linear-gradient(135deg, var(--accent), var(--link-hover));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -33,13 +36,13 @@
         .error-title {
             font-size: 2.5em;
             font-weight: 700;
-            color: #f1f5f9;
+            color: var(--text-primary);
             margin: 20px 0;
         }
 
         .error-message {
             font-size: 1.1em;
-            color: #cbd5e1;
+            color: var(--text-secondary);
             margin-bottom: 40px;
             line-height: 1.6;
         }
@@ -53,7 +56,7 @@
 
         .error-actions a {
             padding: 12px 28px;
-            border-radius: 4px;
+            border-radius: 8px;
             font-weight: 600;
             transition: all 0.3s;
             text-decoration: none;
@@ -61,22 +64,24 @@
         }
 
         .home-btn {
-            background: linear-gradient(135deg, #6366f1, #818cf8);
-            color: white;
+            background: var(--text-primary);
+            color: var(--bg);
         }
 
         .home-btn:hover {
+            background: var(--accent);
+            color: #ffffff;
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+            box-shadow: var(--shadow);
         }
 
         .back-btn {
-            border: 2px solid #6366f1;
-            color: #818cf8;
+            border: 2px solid var(--accent);
+            color: var(--accent);
         }
 
         .back-btn:hover {
-            background: rgba(99, 102, 241, 0.1);
+            background: var(--accent-soft);
         }
 
         .floating-emoji {
@@ -98,24 +103,34 @@
             text-align: center;
             margin-bottom: 60px;
             padding-bottom: 40px;
-            border-bottom: 1px solid #334155;
+            border-bottom: 1px solid var(--border);
         }
 
         .page-name {
             font-size: 2em;
             font-weight: 700;
-            color: #f1f5f9;
+            color: var(--text-primary);
             margin-bottom: 4px;
         }
 
         .page-position {
             font-size: 1em;
-            color: #818cf8;
+            color: var(--accent);
             font-weight: 500;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .floating-emoji {
+                animation: none;
+            }
         }
     </style>
 </head>
 <body>
+    <button id="theme-toggle" class="icon-btn" aria-label="Toggle color theme" style="position: fixed; top: 20px; right: 20px; z-index: 50;">
+        <i class="fa-solid fa-moon theme-icon-dark"></i>
+        <i class="fa-solid fa-sun theme-icon-light"></i>
+    </button>
     <div class="error-container">
         <div class="error-content">
             <div class="page-header">
@@ -132,5 +147,6 @@
             </div>
         </div>
     </div>
+    <script src="/js/script.js"></script>
 </body>
 </html>
