@@ -660,6 +660,11 @@ h1, h2, h3 {
 }
 
 @media (max-width: 720px) {
+    .nav-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .main-nav {
         position: absolute;
         top: 100%;
@@ -698,10 +703,6 @@ h1, h2, h3 {
         backdrop-filter: blur(2px);
         -webkit-backdrop-filter: blur(2px);
         z-index: 40;
-    }
-
-    .btn-primary span {
-        display: none;
     }
 }
 
