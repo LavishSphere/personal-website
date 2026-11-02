@@ -544,6 +544,83 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 24px;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    line-height: inherit;
+    color: var(--accent);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.link-btn:hover {
+    color: var(--link-hover);
+}
+
+/* ---------- Project dialog ---------- */
+
+.project-dialog {
+    width: min(560px, calc(100% - 32px));
+    max-height: calc(100% - 32px);
+    margin: auto;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.project-dialog[open] {
+    animation: dialog-in 0.2s ease;
+}
+
+.project-dialog::backdrop {
+    background: rgba(5, 8, 15, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.dialog-inner {
+    padding: 24px;
+}
+
+.dialog-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dialog-head h2 {
+    font-size: 1.25em;
+}
+
+html:has(.project-dialog[open]) {
+    overflow: hidden;
+}
+
+@keyframes dialog-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-dialog[open] {
+        animation: none;
+    }
+}
+
 /* ---------- Writing ---------- */
 
 .writing-grid {

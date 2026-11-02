@@ -112,7 +112,7 @@
                 </div>
                 <ul class="hero-labels" aria-hidden="true">
                     <li>Software</li>
-                    <li>Systems</li>
+                    <li>Security</li>
                     <li>Infrastructure</li>
                 </ul>
             </div>
@@ -221,14 +221,14 @@
                 <h2 class="section-title">Updates</h2>
                 <ul class="updates-timeline">
                     <li>
-                        <span class="update-date">SEP 2026</span>
-                        <h3>Moved to Boston</h3>
-                        <p>Relocated to Northeastern's Boston campus for the school year after my first year in Oakland, and started as Bloomberg Lab Manager.</p>
+                        <span class="update-date">OCT 2026</span>
+                        <h3>Completed the NSA Codebreaker Challenge</h3>
+                        <p>Became the first Northeastern student ever to complete every task in the <a href="https://nsa-codebreaker.org" target="_blank" rel="noopener noreferrer">NSA Codebreaker Challenge</a>.</p>
                     </li>
                     <li>
-                        <span class="update-date">AUG 2026</span>
-                        <h3>Hired as Bloomberg Lab Manager</h3>
-                        <p>Accepted an offer to manage the D'Amore-McKim Bloomberg Business Lab, working with <a href="http://vincentcmuscolino.com" target="_blank" rel="noopener noreferrer">Professor Vincent Muscolino</a>.</p>
+                        <span class="update-date">SEP 2026</span>
+                        <h3>Moved to Boston</h3>
+                        <p>Relocated to Northeastern's Boston campus after my first year in Oakland, and started managing the Bloomberg Lab with <a href="http://vincentcmuscolino.com" target="_blank" rel="noopener noreferrer">Professor Vincent Muscolino</a>.</p>
                     </li>
                     <li>
                         <span class="update-date">JUL 2026</span>
@@ -250,6 +250,19 @@
             <div id="projects">
                 <h2 class="section-title">Projects</h2>
                 <div class="project-list">
+                    <div class="project-card">
+                        <a class="project-card-cover" href="https://github.com/lavishsphere/Patchlane" target="_blank" rel="noopener noreferrer" aria-label="Patchlane on GitHub"></a>
+                        <div class="project-icon" style="--badge-bg:#4f46e5"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="project-body">
+                            <h3><a href="https://patchlane.khayrul.com" target="_blank" rel="noopener noreferrer">Patchlane</a></h3>
+                            <p>AI incident responder built at HackHarvard 2026. Reproduces exploits in isolated sandboxes, then a coding agent patches them through an MCP server with 7 allowlisted tools, validated across 128 runs.</p>
+                            <div class="tag-row">
+                                <span class="tag">Python</span>
+                                <span class="tag">MCP</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="project-card">
                         <div class="project-icon" style="--badge-bg:#111827"><i class="fa-solid fa-robot"></i></div>
                         <div class="project-body">
@@ -275,21 +288,34 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <a class="project-card-cover" href="https://github.com/lavishsphere/HotMic" target="_blank" rel="noopener noreferrer" aria-label="HotMic on GitHub"></a>
-                        <div class="project-icon" style="--badge-bg:#ea580c"><i class="fa-solid fa-microphone"></i></div>
-                        <div class="project-body">
-                            <h3>HotMic</h3>
-                            <p>AI commentary generator for World Cup clips, translating and narrating footage in any language. Built the backend pipeline connecting Gemini, GMI Cloud, and MiniMax TTS over WebSockets.</p>
-                            <div class="tag-row">
-                                <span class="tag">Python</span>
-                                <span class="tag">WebSockets</span>
-                                <span class="tag">Gemini</span>
+                </div>
+                <div class="project-links">
+                    <button type="button" class="text-link link-btn" id="more-projects-btn" aria-haspopup="dialog">More projects <i class="fa-solid fa-plus"></i></button>
+                    <a class="text-link" href="https://github.com/lavishsphere" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <dialog class="project-dialog" id="more-projects" aria-labelledby="more-projects-title">
+                    <div class="dialog-inner">
+                        <div class="dialog-head">
+                            <h2 id="more-projects-title">More projects</h2>
+                            <button type="button" class="icon-btn" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="project-list">
+                            <div class="project-card">
+                                <a class="project-card-cover" href="https://github.com/lavishsphere/HotMic" target="_blank" rel="noopener noreferrer" aria-label="HotMic on GitHub"></a>
+                                <div class="project-icon" style="--badge-bg:#ea580c"><i class="fa-solid fa-microphone"></i></div>
+                                <div class="project-body">
+                                    <h3>HotMic</h3>
+                                    <p>AI commentary generator for World Cup clips, translating and narrating footage in any language. Built the backend pipeline connecting Gemini, GMI Cloud, and MiniMax TTS over WebSockets.</p>
+                                    <div class="tag-row">
+                                        <span class="tag">Python</span>
+                                        <span class="tag">WebSockets</span>
+                                        <span class="tag">Gemini</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <a class="text-link" href="https://github.com/lavishsphere" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                </dialog>
             </div>
         </section>
 

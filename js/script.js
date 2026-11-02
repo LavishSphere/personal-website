@@ -59,6 +59,20 @@ if (navBackdrop) {
     navBackdrop.addEventListener('click', () => setNavOpen(false));
 }
 
+// "More projects" dialog
+const moreProjects = document.getElementById('more-projects');
+const moreProjectsBtn = document.getElementById('more-projects-btn');
+
+if (moreProjects && moreProjectsBtn) {
+    moreProjectsBtn.addEventListener('click', () => moreProjects.showModal());
+    moreProjects.addEventListener('click', (e) => {
+        // Clicks on the backdrop land on the dialog itself, outside .dialog-inner
+        if (e.target === moreProjects || e.target.closest('[data-close]')) {
+            moreProjects.close();
+        }
+    });
+}
+
 // Scrollspy: highlight the nav link for the section in view
 const navLinkMap = new Map();
 document.querySelectorAll('.nav-link[data-nav]').forEach(link => {
